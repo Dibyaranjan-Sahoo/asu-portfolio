@@ -1,0 +1,163 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WhatsApp Chat</title>
+ <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #ece5dd;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.whatsapp-container {
+  width: 360px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #075e54;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info h4 {
+  margin: 0;
+}
+
+.user-info p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 10px;
+  background: #dcf8c6;
+  overflow-y: auto;
+}
+
+.message {
+  background: white;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 10px;
+  max-width: 70%;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.message.sent {
+  background: #d4f8ca;
+  align-self: flex-end;
+}
+
+.chat-footer {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #f0f0f0;
+}
+
+.chat-footer input {
+  flex: 1;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.chat-footer button {
+  background: #075e54;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+ </style>
+</head>
+<body>
+  <div class="whatsapp-container">
+    <div class="chat-header">
+      <img src="Screenshot_20250411_100436_Gallery.jpg" alt="User" class="user-img">
+      <div class="user-info">
+        <h4>Asutosh Mahanty</h4>
+        <p>Online</p>
+      </div>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+       Messages will appear here 
+    </div>
+
+    <div class="chat-footer">
+      <input type="text" id="messageInput" placeholder="Type a message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+     function sendMessage() {
+  const input = document.getElementById("messageInput");
+  const chatBody = document.getElementById("chatBody");
+  const messageText = input.value.trim();
+
+  if (messageText === "") return;
+
+  const messageDiv = document.createElement("div");
+  messageDiv.className = "message sent";
+  messageDiv.textContent = messageText;
+
+  chatBody.appendChild(messageDiv);
+  input.value = "";
+
+  // Auto-scroll to bottom
+  chatBody.scrollTop = chatBody.scrollHeight;
+}
+
+  </script>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+        background-color: rgb(0, 200, 163);
+      }
+        .img{
+            width: 460px;height: 80%; border: 5px solid white;align-items: center; position: absolute; left: 34%;margin-top: 4%;
+          }
+        
+    </style>
+</head>
+<body>
+    <img src="WhatsApp Image 2025-04-12 at 00.36.17_9a25abbf.jpg" class="img">
+</body>
+</html>
